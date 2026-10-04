@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:gravity="center_vertical"
+        android:background="#FF9800"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="🎨 Coloriage Magique"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- BARRE D'INFOS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFECB3"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvDrawing"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Dessin : Fleur"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#5D4037"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnChangeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text=" Changer"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_blue_round" />
+
+    </LinearLayout>
+
+    <!-- ZONE DE DESSIN (adaptive) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/baseImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img"
+            android:scaleType="fitCenter"
+            android:alpha="0.3"
+            android:background="#FFFFFF" />
+
+        <com.example.kidsmart.DrawingView
+            android:id="@+id/drawView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <!-- PALETTE DE COULEURS ADAPTIVE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCC80"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="🌈 Choisis ta couleur :"
+            android:textColor="#5D4037"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Palette flexible -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/paletteBar"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <!-- OUTILS RESPONSIVE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/btnBrush"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Pinceau"
+            android:background="@drawable/btn_orange_round"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/btnEraser"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Gomme"
+            android:background="@drawable/btn_grey_round"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Effacer"
+            android:background="@drawable/btn_red_round"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

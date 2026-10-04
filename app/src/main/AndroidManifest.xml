@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kidsmart">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="KidSmart"
+        android:theme="@style/Theme.KidSmart">
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <!-- ACTIVITÉ DE DÉMARRAGE -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MemoryGameActivity" /> <!-- Autres activités -->
+        <activity android:name=".PuzzleActivity" />
+        <activity android:name=".ColoringActivity" />
+        <activity android:name=".SoundMatchActivity" />
+        <activity android:name=".MathQuizActivity" />
+        <activity android:name=".FlagColorsActivity" />
+        <activity android:name=".MatchImageWordActivity" />
+        <activity android:name=".IntruderActivity" />
+        <activity android:name=".TraceLetterActivity" />
+        <activity android:name=".QuizImageActivity" />
+    </application>
+
+</manifest>

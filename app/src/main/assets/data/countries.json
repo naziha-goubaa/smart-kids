@@ -1,0 +1,14 @@
+[
+  {
+    "country": "France",
+    "image": "flag_france"
+  },
+  {
+    "country": "Italy",
+    "image": "flag_italy"
+  },
+  {
+    "country": "Germany",
+    "image": "flag_germany"
+  }
+]

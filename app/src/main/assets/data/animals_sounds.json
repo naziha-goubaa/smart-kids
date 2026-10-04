@@ -1,0 +1,26 @@
+[
+  {
+    "id": "lion",
+    "name": "Lion",
+    "image": "img_lion",
+    "sound": "lion_roar"
+  },
+  {
+    "id": "cat",
+    "name": "Chat",
+    "image": "img_cat",
+    "sound": "cat_meow"
+  },
+  {
+    "id": "dog",
+    "name": "Chien",
+    "image": "img_dog",
+    "sound": "dog_bark"
+  },
+  {
+    "id": "cow",
+    "name": "Vache",
+    "image": "img_cow",
+    "sound": "cow_moo"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {"id":"lion","name":"Lion","image":"img_lion"},
+  {"id":"cat","name":"Chat","image":"img_cat"},
+  {"id":"dog","name":"Chien","image":"img_dog"},
+  {"id":"cow","name":"Vache","image":"img_cow"}
+]

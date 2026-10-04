@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E5F5"
+    android:padding="15dp">
+
+    <!-- En-tête -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:background="#9C27B0"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🖼️ Associe Image || Mot"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Stats -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#E1BEE7"
+        android:padding="15dp"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Score: 0"
+            android:textSize="22sp"
+            android:textColor="#4A148C"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvMatches"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Paires: 0/8"
+            android:textSize="22sp"
+            android:textColor="#4A148C"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Instruction -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👆 Touche une image, puis le mot qui correspond !"
+        android:textSize="20sp"
+        android:textColor="#7B1FA2"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        android:padding="15dp"
+        android:background="#FFFFFF" />
+
+    <!-- Zone de jeu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:elevation="4dp">
+
+        <!-- Colonne Images -->
+        <LinearLayout
+            android:id="@+id/colImages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#F3E5F5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#E3F2FD"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="IMAGES"
+                android:textColor="#2196F3"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Images ajoutées dynamiquement -->
+        </LinearLayout>
+
+        <!-- Séparateur -->
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="#9C27B0"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <!-- Colonne Mots -->
+        <LinearLayout
+            android:id="@+id/colWords"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#F3E5F5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#E8F5E9"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="MOTS"
+                android:textColor="#4CAF50"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Mots ajoutés dynamiquement -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Feedback -->
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:background="#C8E6C9" />
+
+
+
+</LinearLayout>

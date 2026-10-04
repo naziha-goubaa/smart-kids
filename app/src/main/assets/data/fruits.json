@@ -1,0 +1,6 @@
+[
+  {"id":"apple","name":"Pomme","image":"img_apple"},
+  {"id":"banana","name":"Banane","image":"img_banana"},
+  {"id":"orange","name":"Orange","image":"img_orange"},
+  {"id":"grape","name":"Raisin","image":"img_grape"}
+]

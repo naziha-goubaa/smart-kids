@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KidSmart</string>
+    <string name="play_memory">Jouer Memory</string>
+    <string name="restart">Recommencer</string>
+</resources>
